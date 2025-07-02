@@ -4,13 +4,12 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 const app = express();
-const port = process.env.API_PORT;
 app.use(express.json());
 
 app.get("/", (req, res) => {
   res.send("Ready Server");
 });
 
-app.listen(port, () => {
-  console.log(`Rodando na porta: ${port}`);
+app.listen(process.env.API_PORT, () => {
+  console.log(`Rodando na porta: ${process.env.API_PORT}`);
 });
