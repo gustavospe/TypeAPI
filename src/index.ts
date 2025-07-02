@@ -1,4 +1,5 @@
 import express, { Express } from "express";
+import "reflect-metadata";
 import dotenv from 'dotenv';
 
 dotenv.config();
