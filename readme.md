@@ -26,7 +26,7 @@ This is an API currently in development for an e-commerce system. The goal is to
 ## ⚙️ Prerequisites
 
 - Node.js (version 16 or higher)
-- MySQL
+- MySQL2
 - Package manager (npm or yarn)
 
 ---

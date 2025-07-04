@@ -4,16 +4,16 @@ import "reflect-metadata";
 @Entity("produtos")
 export class Produto {
     @PrimaryGeneratedColumn()
-    id: number;
+    id!: number;
 
     @Column()
-    nome: string;
+    nome!: string;
 
     @Column("decimal", { precision: 10, scale: 2 })
-    preco: number;
+    preco!: number;
 
     @Column()
-    descricao: string;
+    descricao!: string;
 
 
 
