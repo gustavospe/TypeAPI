@@ -1,0 +1,40 @@
+import { table } from "console";
+import { MigrationInterface, QueryRunner, TableColumn } from "typeorm";
+
+export class AlterProdutos1751635791162 implements MigrationInterface {
+
+        public async up(queryRunner: QueryRunner): Promise<void> {
+            await queryRunner.addColumns('produtos',[
+                new TableColumn({
+                    name: 'quantidade',
+                    type: 'int',
+                    isNullable: false,
+                    default: 0,
+                }),
+                new TableColumn({
+                    name: 'categoria',
+                    type: 'char',
+                    length: '8',
+                    isNullable: false
+                })
+            ])
+        }
+
+    public async down(queryRunner: QueryRunner): Promise<void> {
+        await queryRunner.dropColumns('produtos', [
+            new TableColumn({
+                name: 'quantidade',
+                type: 'int',
+                isNullable: false,
+                default: 0,
+            }),
+            new TableColumn({
+                name: 'categoria',
+                type: 'char',
+                length: '8',
+                isNullable: false
+            })
+        ])
+    }
+
+}
