@@ -27,6 +27,7 @@ export class CreateProduto1751466957936 implements MigrationInterface {
                     {
                         name: "descricao",
                         type: "text",
+                        isNullable: true,
                     },
                 ],
             })
