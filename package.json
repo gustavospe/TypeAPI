@@ -3,9 +3,8 @@
     "start": "node dist/index.js",
     "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
     "build": "tsc",
-    "migration:run": "npm run build && typeorm migration:run -d ./dist/database/data-source.js",
-    "migration:reverse": "type orm:reverse -d ./dist/database/data-source.js",
-    
+    "migration:up": "npm run build && typeorm migration:run -d ./dist/database/data-source.js",
+    "migration:down": "typeorm migration:revert -d ./dist/database/data-source.js"
   },
   "dependencies": {
     "dotenv": "^17.0.1",
