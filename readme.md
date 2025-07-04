@@ -1,103 +1,103 @@
-# 🛒 API de E-commerce (Em Desenvolvimento)
+# 🛒 E-commerce API (In Development)
 
-Esta é uma API em desenvolvimento para um sistema de e-commerce. O objetivo é fornecer funcionalidades básicas para gerenciar produtos, usuários, pedidos e outras operações relacionadas a um ambiente de comércio eletrônico.
-
----
-
-## 🚀 Tecnologias Utilizadas
-
-- **Node.js** – Plataforma de desenvolvimento.
-- **Express** – Framework para criação de APIs.
-- **TypeORM** – ORM para interação com o banco de dados.
-- **MySQL** – Banco de dados relacional.
-- **dotenv** – Gerenciamento de variáveis de ambiente.
-- **TypeScript** – Linguagem de programação utilizada no projeto.
+This is an API currently in development for an e-commerce system. The goal is to provide basic functionalities to manage products, users, orders, and other operations related to an online commerce environment.
 
 ---
 
-## 📁 Estrutura do Projeto
+## 🚀 Technologies Used
 
-- `src/data-source.ts`: Configuração da conexão com o banco de dados utilizando TypeORM.
-- `src/index.ts`: Ponto de entrada da aplicação, responsável por inicializar o servidor.
-- `src/entities/produto.ts`: Entidade Produto, que representa os produtos no banco de dados.
+- **Node.js** – Development platform.
+- **Express** – Framework for creating APIs.
+- **TypeORM** – ORM for database interaction.
+- **MySQL** – Relational database.
+- **dotenv** – Environment variable management.
+- **TypeScript** – Programming language used in the project.
 
 ---
 
-## ⚙️ Pré-requisitos
+## 📁 Project Structure
 
-- Node.js (versão 16 ou superior)
+- `src/data-source.ts`: Database connection configuration using TypeORM.
+- `src/index.ts`: Application entry point, responsible for starting the server.
+- `src/entities/produto.ts`: Product entity representing the products in the database.
+
+---
+
+## ⚙️ Prerequisites
+
+- Node.js (version 16 or higher)
 - MySQL
-- Gerenciador de pacotes (npm ou yarn)
+- Package manager (npm or yarn)
 
 ---
 
-## 🛠️ Configuração do Ambiente
+## 🛠️ Environment Setup
 
-1. Clone o repositório:
+1. Clone the repository:
    ```bash
    git clone https://github.com/gustavospe/TypeAPI.git
    cd TypeAPI
    ```
 
-2. Instale as dependências:
+2. Install the dependencies:
    ```bash
    npm install
    ```
 
-3. Crie um arquivo `.env` na raiz do projeto com as seguintes variáveis:
+3. Create a `.env` file in the root directory with the following variables:
 
    ```env
-   # Configuração do banco de dados
+   # Database configuration
    DB_HOST=localhost
    DB_PORT=3306
    DB_USER=root
-   DB_PASSWORD=sua_senha
-   DB_NAME=nome_do_banco
+   DB_PASSWORD=your_password
+   DB_NAME=database_name
 
-   # Configuração da API
+   # API configuration
    API_PORT=3000
    ```
 
-4. Certifique-se de que o banco de dados MySQL está em execução e configurado corretamente.
+4. Make sure the MySQL database is running and properly configured.
 
-5. Execute as migrações do banco de dados (se aplicável):
+5. Run the database migrations (if applicable):
    ```bash
    npm run typeorm migration:run
    ```
 
-6. Inicie o servidor de desenvolvimento:
+6. Start the development server:
    ```bash
    npm run dev
    ```
 
-7. Acesse a API:
+7. Access the API:
    - http://localhost:3000
 
 ---
 
-## 📡 Endpoints Disponíveis
+## 📡 Available Endpoints
 
-- `GET /`: Endpoint básico para verificar se o servidor está funcionando.
-
----
-
-## 📌 Próximos Passos
-
-- [ ] Implementar endpoints para **CRUD de produtos**
-- [ ] Adicionar **autenticação e autorização**
-- [ ] Criar entidades para **usuários** e **pedidos**
-- [ ] Implementar **testes automatizados**
-- [ ] Melhorar a **documentação**
+- `GET /`: Basic endpoint to check if the server is running.
 
 ---
 
-## 🤝 Contribuição
+## 📌 Next Steps
 
-Este projeto está em desenvolvimento e **contribuições são bem-vindas**!  
-Sinta-se à vontade para abrir **issues** ou enviar **pull requests**.
+- [ ] Implement **CRUD endpoints for products**
+- [ ] Add **authentication and authorization**
+- [ ] Create entities for **users** and **orders**
+- [ ] Implement **automated tests**
+- [ ] Improve the **documentation**
 
 ---
 
-## 📄 Licença
+## 🤝 Contribution
 
-Este projeto está sob a licença **MIT**.
+This project is in development and **contributions are welcome**!  
+Feel free to open **issues** or submit **pull requests**.
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT** license.
